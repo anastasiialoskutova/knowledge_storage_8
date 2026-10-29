@@ -1,0 +1,5212 @@
+[
+  {
+    "@id": "http://example.org/ecommerce-recommendations#inventory04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 18
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Backpack inventory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer13",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice13"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#category03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://example.org/ecommerce-recommendations#hasParentCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category01"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Accessories"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#TopLevelEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#RelevanceScore",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice15",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "47.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#inventory02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 12
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Smart watch inventory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentReturning"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-002"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo02@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#brand02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Brand"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "HomePlus"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#feature04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#BehaviorFeature"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Frequently uses search"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 4"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasChildCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory2"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory08"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer08"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-008"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 08"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer18",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice18"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer15",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice15"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Return",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#interactionTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 11
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendsProduct",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Recommendation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory1"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-001"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice18",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "54.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile10",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 10"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice06"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Order",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/Order"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendationScore",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Recommendation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer06"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.63"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct07"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "27.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer17",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice17"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#assignedToSegment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerSegment"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentNew"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-001"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo01@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#placedOrder",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Order"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#sessionStart",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Session"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct18",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory4"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory18"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer18"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-018"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 18"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#productId",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#feature05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#BehaviorFeature"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Returns to viewed products"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb8",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Customer"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Product"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Brand"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Recommendation"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#RecommendationModel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer19",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice19"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory2"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory07"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer07"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-007"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 07"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#sessionEnd",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Session"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.87"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#price02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "129.99"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Price 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#customer01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#segment01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "C001"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "customer01@example.com"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#profile01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasPurchaseHistory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#history01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#registrationDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-01-10"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Customer 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct20",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory4"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory20"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer20"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-020"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 20"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#profile02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://example.org/ecommerce-recommendations#hasBehaviorFeature": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature02"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature03"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Profile 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#FinancialValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#profile05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://example.org/ecommerce-recommendations#hasBehaviorFeature": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature01"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature05"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Profile 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice10",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "34.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Discount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#FinancialValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct16",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory4"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory16"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer16"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-016"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 16"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct11",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory3"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory11"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer11"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-011"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 11"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#RecommendationModel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#stockQuantity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Inventory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct10",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory2"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory10"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer10"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-010"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 10"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#offer01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#price01"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Offer for headphones"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#CustomerActivity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#score01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#RelevanceScore"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Relevance score 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentNew"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-007"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo07@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile07"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#interactionType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory10",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 8
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#history02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseHistory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase history 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#CartItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasBrand",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Brand"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Price",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#FinancialValue"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#price04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "49.00"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Price 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory13",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 29
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Customer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb5"
+      },
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb6"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Agent"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#hasProfile"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerProfile"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerProfile"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#hasProfile"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#UserFeedback",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#purchase04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Purchase"
+    ],
+    "http://example.org/ecommerce-recommendations#containsItem": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#item04"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#score05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#RelevanceScore"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Relevance score 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#history01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseHistory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase history 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 28
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice19",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "57.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ProductAttribute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 8"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Session",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#segment05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "New customers"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#resultedInRefund",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Return"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Refund"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#customer02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#segment02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "C002"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "customer02@example.com"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#profile02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasPurchaseHistory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#history02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#registrationDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-02-15"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Customer 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "12.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 14
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCategory1",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Demo category 1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#usesPaymentMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Payment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PaymentMethod"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#product02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasBrand": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#brand01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#inventory02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#offer02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "P002"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Smart watch"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Smart watch"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#discountPercent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Discount"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#segment02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Technology shoppers"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer11",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentNew"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-011"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo11@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile11"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 21
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#offer03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#price03"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Offer for desk lamp"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory14",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 5
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer16",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice16"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendation01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#customer01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasRelevanceScore": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#score01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#producedByModel": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#model01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.95"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product02"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recommendation 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#profile04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://example.org/ecommerce-recommendations#hasBehaviorFeature": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature04"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature05"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Profile 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 7
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory1"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-003"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ProductRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserFeedback"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/Rating"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.63"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer10",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice10"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#offer04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#price04"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Offer for backpack"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#BusinessEvent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer12",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentReturning"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-012"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo12@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile12"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ratingValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductRating"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer11",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice11"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 6"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory2"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory06"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer06"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-006"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 06"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentReturning"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-006"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo06@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile06"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#price03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "34.50"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Price 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct14",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory3"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory14"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer14"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-014"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 14"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#CommercialEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#category02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://example.org/ecommerce-recommendations#hasParentCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category01"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Home and lifestyle"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice11",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "37.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCategory4",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Demo category 4"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentNew"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-003"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo03@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#purchase02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Purchase"
+    ],
+    "http://example.org/ecommerce-recommendations#containsItem": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#item02"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasDiscount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Offer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Discount"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct19",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory4"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory19"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer19"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-019"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 19"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#UserInteraction",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer08"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.79"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct09"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#CatalogEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#refundAmount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Refund"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentReturning"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-004"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo04@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#segment03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Budget shoppers"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice17",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "52.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice06",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "24.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Offer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CommercialEntity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/Offer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#interactionTarget",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#feature03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#BehaviorFeature"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Prefers discounted products"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasOffer",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Offer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#product03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasBrand": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#brand02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#inventory03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#offer03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "P003"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Desk lamp"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Desk lamp"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer20",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice20"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "29.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#purchase05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Purchase"
+    ],
+    "http://example.org/ecommerce-recommendations#containsItem": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#item05"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile09",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 9"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Payment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#performedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer10",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentReturning"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-010"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo10@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile10"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#item03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseItem"
+    ],
+    "http://example.org/ecommerce-recommendations#partOfPurchase": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#purchase03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#purchasedProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#quantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase item 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice09",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "32.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCategory3",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Demo category 3"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.55"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct06"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#PurchaseHistory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#registrationDate",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasPurchaseHistory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PurchaseHistory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#RecommendationList",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasBehaviorFeature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerProfile"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BehaviorFeature"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "14.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#SegmentReturning",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Returning customer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentNew"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-005"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo05@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasProfile",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerProfile"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#inventory05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 30
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Speaker inventory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#item05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseItem"
+    ],
+    "http://example.org/ecommerce-recommendations#partOfPurchase": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#purchase05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#purchasedProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#quantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase item 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 5"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice07"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#purchasedProduct",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PurchaseItem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#modelVersion",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#RecommendationModel"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#PaymentMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile11",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 11"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice20",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "59.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer09",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice09"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory16",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 19
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#currency",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Price"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#email",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "22.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#SimilarityScore",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasRelevanceScore",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Recommendation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#RelevanceScore"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#item01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseItem"
+    ],
+    "http://example.org/ecommerce-recommendations#partOfPurchase": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#purchase01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#purchasedProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#quantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase item 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#history04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseHistory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase history 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory17",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 26
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer12",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice12"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#price01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "79.99"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Price 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#containsItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Purchase"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PurchaseItem"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#partOfPurchase"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendation05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#customer05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasRelevanceScore": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#score05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#producedByModel": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#model01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.84"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product05"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recommendation 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory20",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 16
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#writtenBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductReview"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer09",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentNew"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-009"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo09@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile09"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#feature02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#BehaviorFeature"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Often purchases electronics"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Wishlist",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerActivity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Purchase",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb1"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#containsItem"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PurchaseItem"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ProductClick",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#score02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#RelevanceScore"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Relevance score 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#customerId",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#product01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasBrand": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#brand01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#inventory01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#offer01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "P001"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Wireless headphones"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Wireless headphones"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice12",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "39.99"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb15",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://example.org/ecommerce-recommendations#CustomerProfile"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#PurchaseHistory"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#ShoppingCart"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Wishlist"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Session"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#savedProduct",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Wishlist"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer14",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice14"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#segment04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Fashion shoppers"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#product04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasBrand": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#brand03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#inventory04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#offer04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "P004"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Backpack"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Backpack"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Product",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@id": "https://schema.org/Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb7"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CatalogEntity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/Product"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb7",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#belongsToCategory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory19",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 9
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#profile01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://example.org/ecommerce-recommendations#hasBehaviorFeature": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature01"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature02"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Profile 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#category01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Electronics"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#inventory01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 25
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Headphones inventory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice08"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#profile03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://example.org/ecommerce-recommendations#hasBehaviorFeature": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature03"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#feature04"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Profile 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#CustomerSegment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#inventory03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 40
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Desk lamp inventory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ProductView",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/ViewAction"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCategory2",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#ProductCategory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Demo category 2"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#score04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#RelevanceScore"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Relevance score 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#priceAmount",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Price"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#belongsToCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#offer02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#price02"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Offer for smart watch"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#TopLevelEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Ontology"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "Ontology of customers, products, purchases, financial transactions and personalized recommendations."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "E-commerce Recommendation Ontology"
+      },
+      {
+        "@language": "uk",
+        "@value": "Онтологія рекомендацій для електронної комерції"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo": [
+      {
+        "@value": "1.0"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#model01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#RecommendationModel"
+    ],
+    "http://example.org/ecommerce-recommendations#modelVersion": [
+      {
+        "@value": "1.0"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Personalized recommendation model"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb21",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Purchase"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Order"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#Payment"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#UserInteraction"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#ProductReview"
+          },
+          {
+            "@id": "http://example.org/ecommerce-recommendations#ProductRating"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct13",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory3"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory13"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer13"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-013"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 13"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory1"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-002"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#productName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#item02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseItem"
+    ],
+    "http://example.org/ecommerce-recommendations#partOfPurchase": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#purchase02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#purchasedProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#quantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase item 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#BehaviorFeature",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Brand",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/Brand"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory09",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 25
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ShoppingCart",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CustomerActivity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#brand03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Brand"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "StyleWorks"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory1"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-004"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice14",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "44.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#paidBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Order"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Payment"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct15",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory3"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory15"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer15"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-015"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 15"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory15",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 12
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#price05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "59.99"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Price 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoCustomer08",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#SegmentReturning"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "CUST-008"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "demo08@example.org"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProfile08"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "17.49"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#history05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseHistory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase history 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#segment01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Frequent buyers"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#history03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseHistory"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase history 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile12",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 12"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasInventory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Inventory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory1"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-005"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendation03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#customer03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasRelevanceScore": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#score03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#producedByModel": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#model01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.87"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product03"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recommendation 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#SegmentNew",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerSegment"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "New customer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 4
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice16",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "49.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Recommendation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb2"
+      },
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb3"
+      },
+      {
+        "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb4"
+      },
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb2",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#recommendsProduct"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb3",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#recommendsProduct"
+      }
+    ]
+  },
+  {
+    "@id": "_:nbf78fb26e98a4c6c8f72c239b57c6c1eb4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#recommendsProduct"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#CustomerProfile",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#customer05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#segment05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "C005"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "customer05@example.com"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#profile05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasPurchaseHistory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#history05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#registrationDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-05-12"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Customer 05"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory12",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 22
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.71"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer07"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.71"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct08"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory11",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 15
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasRating",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductRating"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#partOfPurchase",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PurchaseItem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Purchase"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendation04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#customer04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasRelevanceScore": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#score04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#producedByModel": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#model01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.89"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product04"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recommendation 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "19.99"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct09",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory2"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory09"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer09"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-009"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 09"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoRecommendation03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCustomer03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.79"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoProduct04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory18",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 7"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#PurchaseItem",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoOffer04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoPrice04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 3"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasParentCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductCategory"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#hasChildCategory"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ProductCategory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#CatalogEntity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/CategoryCode"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoInventory07",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Inventory"
+    ],
+    "http://example.org/ecommerce-recommendations#stockQuantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 18
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct17",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory4"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory17"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer17"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-017"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 17"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#product05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#category01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasBrand": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#brand01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#inventory05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#offer05"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "P005"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Portable speaker"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Portable speaker"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#purchase01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Purchase"
+    ],
+    "http://example.org/ecommerce-recommendations#containsItem": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#item01"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase 01"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#producedByModel",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Recommendation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#RecommendationModel"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#customer03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#segment03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "C003"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "customer03@example.com"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#profile03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasPurchaseHistory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#history03"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#registrationDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-03-20"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Customer 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#ProductReview",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#UserFeedback"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#closeMatch": [
+      {
+        "@id": "https://schema.org/Review"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#purchase03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Purchase"
+    ],
+    "http://example.org/ecommerce-recommendations#containsItem": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#item03"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#generatedFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Recommendation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Customer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#offer05",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Offer"
+    ],
+    "http://example.org/ecommerce-recommendations#hasPrice": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#price05"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Offer for speaker"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#item04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#PurchaseItem"
+    ],
+    "http://example.org/ecommerce-recommendations#partOfPurchase": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#purchase04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#purchasedProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#quantity": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 1
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Purchase item 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProfile01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#CustomerProfile"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Synthetic profile 1"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#feature01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#BehaviorFeature"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Frequently views products"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Inventory",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#KnowledgeEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#score03",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#RelevanceScore"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Relevance score 03"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoProduct12",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Product"
+    ],
+    "http://example.org/ecommerce-recommendations#belongsToCategory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoCategory3"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasInventory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoInventory12"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasOffer": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#DemoOffer12"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productId": [
+      {
+        "@value": "PROD-012"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#productName": [
+      {
+        "@value": "Demo product 12"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasPrice",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Offer"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Price"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#recommendation02",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Recommendation"
+    ],
+    "http://example.org/ecommerce-recommendations#generatedFor": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#customer02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasRelevanceScore": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#score02"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#producedByModel": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#model01"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendationScore": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0.91"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#recommendsProduct": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#product01"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Recommendation 02"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#brand01",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Brand"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "TechNova"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#customer04",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Customer"
+    ],
+    "http://example.org/ecommerce-recommendations#assignedToSegment": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#segment04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#customerId": [
+      {
+        "@value": "C004"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#email": [
+      {
+        "@value": "customer04@example.com"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasProfile": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#profile04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#hasPurchaseHistory": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#history04"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#registrationDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2025-04-05"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Customer 04"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#quantity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#PurchaseItem"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#integer"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#Refund",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#BusinessEvent"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#hasAttribute",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#Product"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://example.org/ecommerce-recommendations#ProductAttribute"
+      }
+    ]
+  },
+  {
+    "@id": "http://example.org/ecommerce-recommendations#DemoPrice13",
+    "@type": [
+      "http://example.org/ecommerce-recommendations#Price"
+    ],
+    "http://example.org/ecommerce-recommendations#currency": [
+      {
+        "@value": "USD"
+      }
+    ],
+    "http://example.org/ecommerce-recommendations#priceAmount": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "42.49"
+      }
+    ]
+  }
+]

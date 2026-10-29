@@ -1,0 +1,7 @@
+﻿id,claim,type,source,verification_level,status,comment
+C08-01,The source ontology contains at least 300 RDF triples.,fact,rdflib parse of data/kb.ttl,V4,verified,Counted programmatically by scripts/run_lab08.py.
+C08-02,A Customer must have customerId and a CustomerProfile.,rule,shapes/shapes.ttl,V3,verified,Encoded as SHACL minCount/datatype/class constraints; test fixtures exercise these rules.
+C08-03,"Recommendation score is in the interval [0,1].",rule,shapes/shapes.ttl,V3,verified,Encoded with sh:minInclusive 0 and sh:maxInclusive 1.
+C08-04,A specific product can be linked to a Wikidata concept based only on a generic product name.,hypothesis,External linking review,V1,rejected,Name alone is insufficient evidence; require matching attributes or leave link pending.
+C08-05,The property hasParentCategory is transitive.,fact,data/kb.ttl ontology declaration,V3,pending,Verify the property declaration and reasoner behavior before asserting inference.
+C08-06,All Text-to-SPARQL questions can be answered by the deterministic intent baseline.,hypothesis,tests/t2s.jsonl and scripts/run_lab08.py,V2,rejected,The baseline intentionally supports only a subset; unsupported questions are counted as failures.

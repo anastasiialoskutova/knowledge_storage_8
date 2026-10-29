@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+SELECT (COUNT(DISTINCT ?p) AS ?productCount) WHERE { ?p a :Product . }

@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+SELECT ?product ?ancestor WHERE { ?product :belongsToCategory/:hasParentCategory* ?ancestor . } LIMIT 30

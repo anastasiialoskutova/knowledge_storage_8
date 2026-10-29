@@ -1,0 +1,14 @@
+@prefix : <http://example.org/ecommerce-recommendations#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Candidate mappings: confidence comments are expert estimates, not external verification evidence.
+:Product skos:exactMatch schema:Product ; rdfs:comment "confidence=0.98; candidate; verify against current Schema.org definition and scope before submission" .
+:Brand skos:exactMatch schema:Brand ; rdfs:comment "confidence=0.98; candidate; verify against current Schema.org definition and scope before submission" .
+:Offer skos:exactMatch schema:Offer ; rdfs:comment "confidence=0.98; candidate; verify against current Schema.org definition and scope before submission" .
+:Order skos:closeMatch schema:Order ; rdfs:comment "confidence=0.95; candidate; compare transaction semantics before final approval" .
+:ProductReview skos:closeMatch schema:Review ; rdfs:comment "confidence=0.90; candidate; local concept is product-specific" .
+# Explicitly rejected; name similarity alone does not justify identity.
+:Recommendation rdfs:comment "rejected-link: no verified equivalent URI identified; do not assert owl:sameAs based on label similarity alone; confidence=0.00" .

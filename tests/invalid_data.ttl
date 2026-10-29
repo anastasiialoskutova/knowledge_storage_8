@@ -1,0 +1,9 @@
+@prefix : <http://example.org/ecommerce-recommendations#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+:BadCustomer a :Customer ; :customerId "bad-id" ; :hasProfile :NotAProfile .
+:NotAProfile a :Product .
+:BadProduct a :Product ; :productId "PROD-901" ; :hasOffer :BadOffer ; :hasInventory :BadInventory .
+:BadOffer a :Offer ; :hasPrice :BadPrice .
+:BadPrice a :Price ; :priceAmount "-5.0"^^xsd:decimal ; :currency "GBP" .
+:BadInventory a :Inventory ; :stockQuantity "-2"^^xsd:integer .
+:BadRecommendation a :Recommendation ; :generatedFor :BadCustomer ; :recommendsProduct :BadProduct ; :recommendationScore "1.5"^^xsd:decimal .

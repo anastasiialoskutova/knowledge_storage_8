@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+SELECT ?product ?name ?stock WHERE { ?product a :Product ; :productName ?name ; :hasInventory ?i . ?i :stockQuantity ?stock . FILTER(?stock > 10) } ORDER BY DESC(?stock)

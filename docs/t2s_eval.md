@@ -1,0 +1,5 @@
+# Text-to-SPARQL evaluation
+
+`tests/t2s.jsonl` contains 15 questions of varying difficulty and reference SPARQL. The local evaluation harness parses candidate SPARQL with rdflib, checks that referenced predicates/classes occur in the dataset schema, executes supported queries with a row limit, and compares candidate intent to the reference intent. It reports syntax-valid fraction, schema-valid fraction, and exact-intent/result fraction for baseline and improved deterministic mappings.
+
+Important limitation: the bundled harness is a reproducible evaluation scaffold, not a live LLM integration. A real LLM-based submission must add a model call, record its model/version and parameters, save raw generations, and rerun evaluation before claiming those metrics as LLM performance. The five errors section is generated from actual failures in the run; inspect it and classify at least five errors if available. If fewer than five failures occur, deliberately test five negative/ambiguous prompts and document those separately.

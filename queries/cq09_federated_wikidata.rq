@@ -1,0 +1,19 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+SELECT ?localConcept ?externalConcept ?wikidataLabel WHERE {
+  VALUES (?localConcept ?externalConcept) {
+    (:Product schema:Product)
+    (:Brand schema:Brand)
+    (:Offer schema:Offer)
+    (:Order schema:Order)
+    (:ProductReview schema:Review)
+  }
+  ?localConcept (skos:exactMatch|skos:closeMatch) ?externalConcept .
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?item rdfs:label ?wikidataLabel .
+    FILTER(LANG(?wikidataLabel) = "en")
+    FILTER(CONTAINS(LCASE(STR(?wikidataLabel)), LCASE(REPLACE(STR(?externalConcept), "https://schema.org/", ""))))
+  }
+} LIMIT 10

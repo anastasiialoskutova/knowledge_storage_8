@@ -1,0 +1,9 @@
+@prefix : <http://example.org/ecommerce-recommendations#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+:TestCustomer a :Customer ; :customerId "CUST-900" ; :email "test@example.org" ; :hasProfile :TestProfile .
+:TestProfile a :CustomerProfile .
+:TestProduct a :Product ; :productId "PROD-900" ; :productName "Test product" ; :hasOffer :TestOffer ; :hasInventory :TestInventory .
+:TestOffer a :Offer ; :hasPrice :TestPrice .
+:TestPrice a :Price ; :priceAmount "12.50"^^xsd:decimal ; :currency "USD" .
+:TestInventory a :Inventory ; :stockQuantity "5"^^xsd:integer .
+:TestRecommendation a :Recommendation ; :generatedFor :TestCustomer ; :recommendsProduct :TestProduct ; :recommendationScore "0.85"^^xsd:decimal .

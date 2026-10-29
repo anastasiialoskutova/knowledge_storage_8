@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+ASK { ?r a :Recommendation ; :recommendsProduct ?p ; :recommendationScore ?s . FILTER(?s > 0.7) }

@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+SELECT (AVG(?amount) AS ?averagePrice) (MIN(?amount) AS ?minPrice) (MAX(?amount) AS ?maxPrice) WHERE { ?offer a :Offer ; :hasPrice ?price . ?price :priceAmount ?amount . }

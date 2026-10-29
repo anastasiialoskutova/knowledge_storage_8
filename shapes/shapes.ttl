@@ -1,0 +1,22 @@
+@prefix : <http://example.org/ecommerce-recommendations#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:CustomerShape a sh:NodeShape ; sh:targetClass :Customer ;
+  sh:property [ sh:path :customerId ; sh:minCount 1 ; sh:datatype xsd:string ; sh:pattern "^CUST-[0-9]{3}$" ] ;
+  sh:property [ sh:path :email ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path :hasProfile ; sh:minCount 1 ; sh:class :CustomerProfile ] .
+:ProductShape a sh:NodeShape ; sh:targetClass :Product ;
+  sh:property [ sh:path :productId ; sh:minCount 1 ; sh:datatype xsd:string ; sh:pattern "^PROD-[0-9]{3}$" ] ;
+  sh:property [ sh:path :productName ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path :hasOffer ; sh:class :Offer ] ;
+  sh:property [ sh:path :hasInventory ; sh:class :Inventory ] .
+:PriceShape a sh:NodeShape ; sh:targetClass :Price ;
+  sh:property [ sh:path :priceAmount ; sh:minCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+  sh:property [ sh:path :currency ; sh:datatype xsd:string ; sh:in ( "USD" "EUR" "UAH" ) ] .
+:RecommendationShape a sh:NodeShape ; sh:targetClass :Recommendation ;
+  sh:property [ sh:path :generatedFor ; sh:minCount 1 ; sh:class :Customer ] ;
+  sh:property [ sh:path :recommendsProduct ; sh:minCount 1 ; sh:class :Product ] ;
+  sh:property [ sh:path :recommendationScore ; sh:minCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ; sh:maxInclusive 1 ] .
+:InventoryShape a sh:NodeShape ; sh:targetClass :Inventory ;
+  sh:property [ sh:path :stockQuantity ; sh:minCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 0 ] .

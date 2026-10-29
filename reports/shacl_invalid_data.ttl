@@ -1,0 +1,101 @@
+@prefix : <http://example.org/ecommerce-recommendations#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode :NotAProfile ;
+            sh:resultMessage "Less than 1 values on :NotAProfile->:productName" ;
+            sh:resultPath :productName ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:na88c82f1b64246cb94887a605132b043b5 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadPrice ;
+            sh:resultMessage "Value Literal(\"GBP\") not in list ['Literal(\"EUR\")', 'Literal(\"UAH\")', 'Literal(\"USD\")']" ;
+            sh:resultPath :currency ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:InConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:in ( "USD" "EUR" "UAH" ) ;
+                    sh:path :currency ] ;
+            sh:value "GBP" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadPrice ;
+            sh:resultMessage "Value is not >= Literal(\"0\", datatype=xsd:integer)" ;
+            sh:resultPath :priceAmount ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:decimal ;
+                    sh:minCount 1 ;
+                    sh:minInclusive 0 ;
+                    sh:path :priceAmount ] ;
+            sh:value -5.0 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadCustomer ;
+            sh:resultMessage "Value does not have class :CustomerProfile" ;
+            sh:resultPath :hasProfile ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:ClassConstraintComponent ;
+            sh:sourceShape [ sh:class :CustomerProfile ;
+                    sh:minCount 1 ;
+                    sh:path :hasProfile ] ;
+            sh:value :NotAProfile ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :NotAProfile ;
+            sh:resultMessage "Less than 1 values on :NotAProfile->:productId" ;
+            sh:resultPath :productId ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:minCount 1 ;
+                    sh:path :productId ;
+                    sh:pattern "^PROD-[0-9]{3}$" ] ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadInventory ;
+            sh:resultMessage "Value is not >= Literal(\"0\", datatype=xsd:integer)" ;
+            sh:resultPath :stockQuantity ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinInclusiveConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:integer ;
+                    sh:minCount 1 ;
+                    sh:minInclusive 0 ;
+                    sh:path :stockQuantity ] ;
+            sh:value -2 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadCustomer ;
+            sh:resultMessage "Value does not match pattern '^CUST-[0-9]{3}$'" ;
+            sh:resultPath :customerId ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:PatternConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:minCount 1 ;
+                    sh:path :customerId ;
+                    sh:pattern "^CUST-[0-9]{3}$" ] ;
+            sh:value "bad-id" ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadProduct ;
+            sh:resultMessage "Less than 1 values on :BadProduct->:productName" ;
+            sh:resultPath :productName ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape _:na88c82f1b64246cb94887a605132b043b5 ],
+        [ a sh:ValidationResult ;
+            sh:focusNode :BadRecommendation ;
+            sh:resultMessage "Value is not <= Literal(\"1\", datatype=xsd:integer)" ;
+            sh:resultPath :recommendationScore ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MaxInclusiveConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:decimal ;
+                    sh:maxInclusive 1 ;
+                    sh:minCount 1 ;
+                    sh:minInclusive 0 ;
+                    sh:path :recommendationScore ] ;
+            sh:value 1.5 ] .
+
+_:na88c82f1b64246cb94887a605132b043b5 sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:path :productName .
+

@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+SELECT ?customer ?product ?score WHERE { ?r a :Recommendation ; :generatedFor ?customer ; :recommendsProduct ?product ; :recommendationScore ?score . } ORDER BY DESC(?score)

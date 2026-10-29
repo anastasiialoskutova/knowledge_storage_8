@@ -1,0 +1,2 @@
+PREFIX : <http://example.org/ecommerce-recommendations#>
+CONSTRUCT { ?c :hasProfile ?profile } WHERE { ?c a :Customer ; :hasProfile ?profile . } LIMIT 20
